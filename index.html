@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shirwal Tiffin — Fresh Homemade Meals Delivered Daily</title>
+<meta name="description" content="Shirwal Tiffin delivers fresh, hygienic, home-style veg and non-veg lunch and dinner tiffins. Add to cart and order on WhatsApp in seconds.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Page loader -->
+<div class="loader" id="loader" aria-hidden="true">
+  <div class="loader-stack">
+    <span class="loader-tier"></span>
+    <span class="loader-tier"></span>
+    <span class="loader-tier"></span>
+  </div>
+</div>
+
+<!-- ============ NAVBAR ============ -->
+<header class="navbar" id="navbar">
+  <div class="container navbar-inner">
+    <a href="#home" class="logo">
+      <span class="logo-mark" aria-hidden="true">
+        <span></span><span></span><span></span>
+      </span>
+      Shirwal <em>Tiffin</em>
+    </a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#home" class="nav-link">Home</a>
+      <a href="#why-us" class="nav-link">Why Us</a>
+      <a href="#menu" class="nav-link">Menu</a>
+      <a href="#plans" class="nav-link">Plans</a>
+      <a href="#enquiry" class="nav-link">Enquiry</a>
+      <a href="#testimonials" class="nav-link">Testimonials</a>
+      <a href="#faq" class="nav-link">FAQ</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+
+    <button class="btn btn-primary btn-nav-cta" data-open-cart>
+      Cart <span class="cart-count" data-cart-count>0</span>
+    </button>
+
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="home">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="hero-blob hero-blob-1" aria-hidden="true"></div>
+    <div class="hero-blob hero-blob-2" aria-hidden="true"></div>
+
+    <div class="container hero-grid">
+      <div class="hero-copy reveal-up">
+        <span class="eyebrow">🍱 Home-style tiffin, made fresh daily</span>
+        <h1 class="hero-title">Fresh Homemade Meals <span class="text-gradient">Delivered Daily</span></h1>
+        <p class="hero-sub">Healthy, hygienic and delicious home-style meals prepared fresh every day — packed with care, delivered on time, tastes like ghar ka khaana.</p>
+
+        <div class="hero-actions">
+          <a href="#menu" class="btn btn-primary btn-lg">
+            Order Now
+          </a>
+          <button class="btn btn-ghost btn-lg" data-open-cart>View Cart</button>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-num" data-count="4200">0</span>
+            <span class="stat-label">Happy Customers</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num" data-count="180000">0</span>
+            <span class="stat-label">Meals Delivered</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num" data-count="6">0</span>
+            <span class="stat-label">Years of Service</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num" data-count="4.9" data-decimal="1">0</span>
+            <span class="stat-label">Customer Rating</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal-up" data-delay="150">
+        <div class="tiffin-illustration" id="parallaxTiffin">
+          <div class="tiffin-tier tier-3">
+            <span class="tiffin-food">🍚 🥦</span>
+          </div>
+          <div class="tiffin-tier tier-2">
+            <span class="tiffin-food">🍛 🥗</span>
+          </div>
+          <div class="tiffin-tier tier-1">
+            <span class="tiffin-food">🍲 🫓</span>
+          </div>
+          <div class="tiffin-handle"></div>
+        </div>
+
+        <div class="float-chip chip-1" aria-hidden="true">🌿 100% Fresh</div>
+        <div class="float-chip chip-2" aria-hidden="true">⏱ On-time Delivery</div>
+        <div class="float-chip chip-3" aria-hidden="true">👩‍🍳 Home Cooked</div>
+      </div>
+    </div>
+
+    <svg class="hero-wave" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0,64 C240,110 480,10 720,40 C960,70 1200,110 1440,60 L1440,120 L0,120 Z"></path>
+    </svg>
+  </section>
+
+  <!-- ============ WHY CHOOSE US ============ -->
+  <section class="section" id="why-us">
+    <div class="container">
+      <div class="section-head reveal-up">
+        <span class="eyebrow">Why Shirwal Tiffin</span>
+        <h2 class="section-title">Cooked with care, delivered with love</h2>
+        <p class="section-sub">Everything we do is built around one promise — meals that taste like home, every single day.</p>
+      </div>
+
+      <div class="feature-grid">
+        <div class="feature-card reveal-up">
+          <div class="feature-icon icon-green">🌾</div>
+          <h3>Fresh Ingredients</h3>
+          <p>Sourced daily from local markets — nothing frozen, nothing stored overnight.</p>
+        </div>
+        <div class="feature-card reveal-up" data-delay="80">
+          <div class="feature-icon icon-orange">🔥</div>
+          <h3>Daily Cooking</h3>
+          <p>Every tiffin is cooked fresh the same day it's delivered — never pre-made in bulk.</p>
+        </div>
+        <div class="feature-card reveal-up" data-delay="160">
+          <div class="feature-icon icon-yellow">💰</div>
+          <h3>Affordable Plans</h3>
+          <p>Premium taste at everyday prices, with plans that fit any budget or appetite.</p>
+        </div>
+        <div class="feature-card reveal-up" data-delay="240">
+          <div class="feature-icon icon-orange">⏰</div>
+          <h3>Timely Delivery</h3>
+          <p>Hot meals reach your door within your chosen delivery window — every time.</p>
+        </div>
+        <div class="feature-card reveal-up" data-delay="320">
+          <div class="feature-icon icon-green">🥗</div>
+          <h3>Healthy Meals</h3>
+          <p>Balanced, nutritious thalis designed with the right mix of grains, greens and protein.</p>
+        </div>
+        <div class="feature-card reveal-up" data-delay="400">
+          <div class="feature-icon icon-yellow">🏠</div>
+          <h3>Home-Style Taste</h3>
+          <p>Recipes rooted in real ghar ka khaana — the way it's meant to be made.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MENU ============ -->
+  <section class="section section-tint" id="menu">
+    <div class="container">
+      <div class="section-head reveal-up">
+        <span class="eyebrow">Our Menu</span>
+        <h2 class="section-title">Build your own tiffin</h2>
+        <p class="section-sub">Add veg or non-veg thalis and extras to your cart, then check out in one message on WhatsApp.</p>
+      </div>
+
+      <div class="menu-tabs reveal-up" role="tablist" aria-label="Menu categories">
+        <button class="menu-tab is-active" data-tab="lunch" role="tab" aria-selected="true">Lunch</button>
+        <button class="menu-tab" data-tab="dinner" role="tab" aria-selected="false">Dinner</button>
+      </div>
+
+      <!-- LUNCH -->
+      <div class="menu-panel is-active" data-panel="lunch">
+        <div class="menu-grid" data-cart-grid="lunch"></div>
+      </div>
+
+      <!-- DINNER -->
+      <div class="menu-panel" data-panel="dinner">
+        <div class="menu-grid" data-cart-grid="dinner"></div>
+      </div>
+
+      <!-- EXTRAS -->
+      <div class="extras-block reveal-up">
+        <h3 class="extras-title">Add extras</h3>
+        <div class="extras-grid" data-cart-grid="extras"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SUBSCRIPTION PLANS ============ -->
+  <section class="section" id="plans">
+    <div class="container">
+      <div class="section-head reveal-up">
+        <span class="eyebrow">Subscription Plans</span>
+        <h2 class="section-title">Choose a plan that fits your day</h2>
+        <p class="section-sub">Skip the daily ordering — subscribe and get fresh tiffins on autopilot. Message us on WhatsApp for current pricing.</p>
+      </div>
+
+      <div class="plans-grid">
+        <div class="plan-card reveal-up">
+          <h3 class="plan-name">Daily</h3>
+          <p class="plan-desc">Pay-as-you-go, perfect for trying us out.</p>
+          <ul class="plan-features">
+            <li>Choose any single meal</li>
+            <li>No commitment</li>
+            <li>Order via WhatsApp anytime</li>
+          </ul>
+          <button class="btn btn-ghost btn-block" data-open-order data-plan-note="Daily Plan">Enquire on WhatsApp</button>
+        </div>
+
+        <div class="plan-card plan-featured reveal-up" data-delay="100">
+          <span class="plan-ribbon">Most Popular</span>
+          <h3 class="plan-name">Weekly</h3>
+          <p class="plan-desc">7 days of fresh tiffins, one easy order.</p>
+          <ul class="plan-features">
+            <li>1 meal daily for 7 days</li>
+            <li>Free delivery included</li>
+            <li>Flexible meal swaps</li>
+          </ul>
+          <button class="btn btn-primary btn-block" data-open-order data-plan-note="Weekly Plan">Enquire on WhatsApp</button>
+        </div>
+
+        <div class="plan-card reveal-up" data-delay="200">
+          <h3 class="plan-name">Monthly</h3>
+          <p class="plan-desc">Best value for everyday convenience.</p>
+          <ul class="plan-features">
+            <li>1 meal daily for 30 days</li>
+            <li>Priority delivery slots</li>
+            <li>Free plan changes anytime</li>
+          </ul>
+          <button class="btn btn-ghost btn-block" data-open-order data-plan-note="Monthly Plan">Enquire on WhatsApp</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ OTHER ENQUIRY ============ -->
+  <section class="special" id="enquiry">
+    <div class="container special-grid">
+      <div class="special-copy reveal-up">
+        <span class="eyebrow eyebrow-light">Custom Requests</span>
+        <h2 class="special-title">Have something else in mind?</h2>
+        <p class="special-desc">Bulk orders, office catering, festival specials, a diet change, or anything not on the menu — tell us what you need and we'll sort it out over WhatsApp.</p>
+
+        <form id="enquiryForm" class="enquiry-form">
+          <input type="text" id="eqName" name="name" required placeholder="Your name" aria-label="Your name">
+          <input type="tel" id="eqPhone" name="phone" required placeholder="Phone number" aria-label="Phone number">
+          <textarea id="eqMessage" name="message" required placeholder="Tell us what you need..." aria-label="Your enquiry"></textarea>
+          <button type="submit" class="btn btn-light btn-lg btn-block">Send Enquiry on WhatsApp</button>
+        </form>
+      </div>
+
+      <div class="special-visual reveal-up" data-delay="150">
+        <div class="enquiry-panel">
+          <p class="enquiry-panel-title">Popular requests</p>
+          <ul class="enquiry-list">
+            <li><span>🎉</span> Festival &amp; party orders</li>
+            <li><span>🏢</span> Corporate &amp; office tiffins</li>
+            <li><span>🥗</span> Custom diet requests</li>
+            <li><span>📦</span> Bulk &amp; weekly group orders</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="section" id="about">
+    <div class="container about-grid">
+      <div class="about-visual reveal-up">
+        <div class="about-blob" aria-hidden="true"></div>
+        <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=900&q=80" alt="Home cook preparing fresh tiffin meals" loading="lazy" width="900" height="700">
+      </div>
+      <div class="about-copy reveal-up" data-delay="100">
+        <span class="eyebrow">Our Story</span>
+        <h2 class="section-title">From one home kitchen to hundreds of tiffins a day</h2>
+        <p class="about-text">Shirwal Tiffin started in a single home kitchen with one simple goal — feed people the way their own family would. Six years later, we still cook every meal fresh, every single day.</p>
+
+        <div class="about-pillars">
+          <div class="pillar">
+            <h4>Our Mission</h4>
+            <p>Deliver hygienic, affordable, home-style meals to every doorstep in Shirwal.</p>
+          </div>
+          <div class="pillar">
+            <h4>Our Vision</h4>
+            <p>To be the most trusted name in daily home food across the region.</p>
+          </div>
+          <div class="pillar">
+            <h4>Our Quality</h4>
+            <p>Fresh sourcing, daily cooking, and consistent taste — no shortcuts, ever.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TESTIMONIALS ============ -->
+  <section class="section section-tint" id="testimonials">
+    <div class="container">
+      <div class="section-head reveal-up">
+        <span class="eyebrow">Testimonials</span>
+        <h2 class="section-title">Loved by families across Shirwal</h2>
+      </div>
+
+      <div class="testimonial-grid">
+        <div class="testimonial-card reveal-up">
+          <p class="testimonial-text">"Tastes exactly like home-cooked food. I've been ordering the monthly plan for 3 months now and never missed a day."</p>
+          <div class="testimonial-person">
+            <div class="avatar">RP</div>
+            <div>
+              <strong>Rohan Patil</strong>
+              <span>Working Professional</span>
+            </div>
+          </div>
+          <div class="stars">★★★★★</div>
+        </div>
+
+        <div class="testimonial-card reveal-up" data-delay="100">
+          <p class="testimonial-text">"As a hostel student, this has been a lifesaver. Hot, fresh food delivered right on time every single day."</p>
+          <div class="testimonial-person">
+            <div class="avatar">SK</div>
+            <div>
+              <strong>Sneha Kulkarni</strong>
+              <span>College Student</span>
+            </div>
+          </div>
+          <div class="stars">★★★★★</div>
+        </div>
+
+        <div class="testimonial-card reveal-up" data-delay="200">
+          <p class="testimonial-text">"Ordering on WhatsApp is so quick. The premium thali is genuinely restaurant-quality but at half the price."</p>
+          <div class="testimonial-person">
+            <div class="avatar">AJ</div>
+            <div>
+              <strong>Amit Joshi</strong>
+              <span>Local Business Owner</span>
+            </div>
+          </div>
+          <div class="stars">★★★★★</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="section" id="faq">
+    <div class="container faq-grid">
+      <div class="section-head faq-head reveal-up">
+        <span class="eyebrow">FAQ</span>
+        <h2 class="section-title">Questions? We've got answers</h2>
+      </div>
+
+      <div class="accordion reveal-up">
+        <div class="accordion-item is-open">
+          <button class="accordion-trigger" aria-expanded="true">
+            How do I place an order?
+            <span class="accordion-icon">+</span>
+          </button>
+          <div class="accordion-panel">
+            <p>Tap any "Order Now" button, fill in the quick order form, and it opens WhatsApp with your order ready to send — no app download needed.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false">
+            What are your delivery timings?
+            <span class="accordion-icon">+</span>
+          </button>
+          <div class="accordion-panel">
+            <p>Lunch: 12:00–1:30 PM &nbsp;•&nbsp; Dinner: 7:30–9:00 PM. You can also choose a preferred window in the order form.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false">
+            Can I pause or change my subscription?
+            <span class="accordion-icon">+</span>
+          </button>
+          <div class="accordion-panel">
+            <p>Yes, weekly and monthly plans can be paused or modified anytime — just message us on WhatsApp at least 3 hours before your next delivery.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false">
+            Do you offer diet-specific meals?
+            <span class="accordion-icon">+</span>
+          </button>
+          <div class="accordion-panel">
+            <p>We can accommodate low-oil, low-spice and Jain preferences — just mention it in the "Additional Notes" field while ordering.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false">
+            What areas do you deliver to?
+            <span class="accordion-icon">+</span>
+          </button>
+          <div class="accordion-panel">
+            <p>We currently deliver across Shirwal and nearby localities. Message us your address on WhatsApp to confirm coverage.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section section-tint" id="contact">
+    <div class="container">
+      <div class="section-head reveal-up">
+        <span class="eyebrow">Contact Us</span>
+        <h2 class="section-title">We'd love to feed you</h2>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-card reveal-up">
+          <div class="contact-icon">📞</div>
+          <h4>Phone</h4>
+          <a href="tel:+917066644476">+91 70666 44476</a>
+        </div>
+        <div class="contact-card reveal-up" data-delay="80">
+          <div class="contact-icon">💬</div>
+          <h4>WhatsApp</h4>
+          <a href="https://wa.me/917066644476" target="_blank" rel="noopener">Chat with us</a>
+        </div>
+        <div class="contact-card reveal-up" data-delay="160">
+          <div class="contact-icon">✉️</div>
+          <h4>Email</h4>
+          <a href="mailto:hello@shirwaltiffin.in">hello@shirwaltiffin.in</a>
+        </div>
+        <div class="contact-card reveal-up" data-delay="240">
+          <div class="contact-icon">📍</div>
+          <h4>Address</h4>
+          <span>Main Road, Shirwal, Satara District, Maharashtra 412801</span>
+        </div>
+      </div>
+
+      <div class="contact-bottom">
+        <div class="hours-card reveal-up">
+          <h4>Business Hours</h4>
+          <ul class="hours-list">
+            <li><span>Lunch Delivery</span><span>12:00 – 1:30 PM</span></li>
+            <li><span>Dinner Delivery</span><span>7:30 – 9:00 PM</span></li>
+            <li><span>Order Desk</span><span>10:00 AM – 9:30 PM, all days</span></li>
+          </ul>
+        </div>
+        <div class="map-card reveal-up" data-delay="100">
+          <div class="map-placeholder">
+            <span>🗺️</span>
+            <p>Google Maps Placeholder<br>Main Road, Shirwal</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a href="#home" class="logo logo-footer">
+        <span class="logo-mark" aria-hidden="true"><span></span><span></span><span></span></span>
+        Shirwal <em>Tiffin</em>
+      </a>
+      <p>Fresh, homemade, home-style tiffins delivered daily across Shirwal.</p>
+      <div class="social-icons">
+        <a href="#" aria-label="Facebook">f</a>
+        <a href="#" aria-label="Instagram">◎</a>
+        <a href="https://wa.me/917066644476" target="_blank" rel="noopener" aria-label="WhatsApp">✆</a>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <a href="#why-us">Why Us</a>
+      <a href="#menu">Menu</a>
+      <a href="#plans">Plans</a>
+      <a href="#enquiry">Enquiry</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#faq">FAQ</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Business Hours</h4>
+      <span>Lunch: 12:00 – 1:30 PM</span>
+      <span>Dinner: 7:30 – 9:00 PM</span>
+    </div>
+
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <a href="tel:+917066644476">+91 70666 44476</a>
+      <a href="mailto:hello@shirwaltiffin.in">hello@shirwaltiffin.in</a>
+      <span>Main Road, Shirwal, Maharashtra</span>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container">
+      <p>© <span id="year"></span> Shirwal Tiffin. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ CART DRAWER ============ -->
+<div class="cart-overlay" id="cartOverlay" aria-hidden="true">
+  <aside class="cart-drawer" role="dialog" aria-modal="true" aria-labelledby="cartTitle">
+    <div class="cart-header">
+      <h3 id="cartTitle">Your Cart</h3>
+      <button class="modal-close" id="cartClose" aria-label="Close cart">&times;</button>
+    </div>
+
+    <div class="cart-items" id="cartItems">
+      <!-- Populated by script.js -->
+    </div>
+
+    <div class="cart-empty" id="cartEmpty">
+      <span>🛒</span>
+      <p>Your cart is empty.</p>
+      <a href="#menu" class="btn btn-ghost" id="cartEmptyBrowse">Browse Menu</a>
+    </div>
+
+    <div class="cart-footer" id="cartFooter">
+      <div class="cart-total-row">
+        <span>Total</span>
+        <span id="cartTotal">₹0</span>
+      </div>
+      <button class="btn btn-primary btn-block btn-lg" id="cartCheckoutBtn">
+        Checkout on WhatsApp
+      </button>
+    </div>
+  </aside>
+</div>
+
+<!-- ============ ORDER / CHECKOUT MODAL ============ -->
+<div class="modal-overlay" id="orderModal" aria-hidden="true">
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="orderModalTitle">
+    <button class="modal-close" id="modalClose" aria-label="Close order form">&times;</button>
+    <h3 id="orderModalTitle">Complete Your Order</h3>
+    <p class="modal-sub">Fill this in and we'll open WhatsApp with your full order — items, quantities and total — ready to send.</p>
+
+    <div class="checkout-summary" id="checkoutSummary">
+      <!-- Populated by script.js: itemized list + total -->
+    </div>
+
+    <form id="orderForm" class="order-form">
+      <div class="form-row">
+        <label for="ofName">Name</label>
+        <input type="text" id="ofName" name="name" required placeholder="Your full name">
+      </div>
+      <div class="form-row">
+        <label for="ofPhone">Phone Number</label>
+        <input type="tel" id="ofPhone" name="phone" required placeholder="10-digit mobile number">
+      </div>
+      <div class="form-row">
+        <label for="ofAddress">Address</label>
+        <textarea id="ofAddress" name="address" required placeholder="House no, street, landmark"></textarea>
+      </div>
+      <div class="form-row">
+        <label for="ofTime">Preferred Delivery Time</label>
+        <input type="text" id="ofTime" name="time" placeholder="e.g. 12:30 PM" required>
+      </div>
+      <div class="form-row">
+        <label for="ofNotes">Additional Notes</label>
+        <textarea id="ofNotes" name="notes" placeholder="Less spicy, no onion, subscription plan, etc. (optional)"></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-primary btn-block btn-lg">
+        Place Order on WhatsApp
+      </button>
+    </form>
+  </div>
+</div>
+
+<!-- ============ FLOATING BUTTONS ============ -->
+<div class="floating-actions">
+  <button class="float-btn float-cart" id="floatCartBtn" aria-label="View cart">
+    🛒 <span class="cart-count" data-cart-count>0</span>
+  </button>
+  <a href="https://wa.me/917066644476" target="_blank" rel="noopener" class="float-btn float-whatsapp" aria-label="Chat on WhatsApp">💬</a>
+  <a href="tel:+917066644476" class="float-btn float-call" aria-label="Call us">📞</a>
+  <button class="float-btn float-top" id="scrollTop" aria-label="Scroll to top">↑</button>
+</div>
+
+<!-- ============ MOBILE BOTTOM BAR ============ -->
+<div class="mobile-bar">
+  <a href="tel:+917066644476" class="mobile-bar-item">
+    <span class="mobile-bar-icon">📞</span> Call
+  </a>
+  <a href="https://wa.me/917066644476" target="_blank" rel="noopener" class="mobile-bar-item">
+    <span class="mobile-bar-icon">💬</span> WhatsApp
+  </a>
+  <button class="mobile-bar-item mobile-bar-order" data-open-cart>
+    <span class="mobile-bar-icon">🛒</span>
+    <span class="mobile-bar-order-label">Cart <span class="cart-count cart-count-mobile" data-cart-count>0</span></span>
+  </button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
