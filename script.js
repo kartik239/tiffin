@@ -11,10 +11,10 @@
   /* ---------------- Menu data (single source of truth) ---------------- */
   // Lunch and dinner both offer the same four thali options.
   const THALI_OPTIONS = [
-    { key: 'veg', name: 'Veg Thali', type: 'Veg', price: 100, img: 'https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&fit=crop&w=800&q=80', desc: 'Roti, seasonal sabzi, dal, rice and salad.' },
-    { key: 'chicken', name: 'Chicken Thali', type: 'Non-Veg', price: 200, img: 'https://images.unsplash.com/photo-1567337710282-00832b415979?auto=format&fit=crop&w=800&q=80', desc: 'Home-style chicken curry with roti and rice.' },
-    { key: 'mutton', name: 'Mutton Thali', type: 'Non-Veg', price: 300, img: 'https://images.unsplash.com/photo-1631452180519-c014fe946bc7?auto=format&fit=crop&w=800&q=80', desc: 'Slow-cooked mutton curry with roti and rice.' },
-    { key: 'fish', name: 'Fish Thali', type: 'Non-Veg', price: 300, img: 'https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=800&q=80', desc: 'Coastal-style fish curry with rice and salad.' }
+    { key: 'veg', name: 'Veg Thali', type: 'Veg', price: 120, img: 'https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&fit=crop&w=800&q=80', desc: 'Roti, seasonal sabzi, dal, rice and salad.' },
+    { key: 'chicken', name: 'Chicken Thali', type: 'Non-Veg', price: 240, img: 'https://images.unsplash.com/photo-1567337710282-00832b415979?auto=format&fit=crop&w=800&q=80', desc: 'Home-style chicken curry with roti and rice.' },
+    { key: 'mutton', name: 'Mutton Thali', type: 'Non-Veg', price: 360, img: 'https://images.unsplash.com/photo-1631452180519-c014fe946bc7?auto=format&fit=crop&w=800&q=80', desc: 'Slow-cooked mutton curry with roti and rice.' },
+    { key: 'fish', name: 'Fish Thali', type: 'Non-Veg', price: 360, img: 'https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=800&q=80', desc: 'Coastal-style fish curry with rice and salad.' }
   ];
 
   const MENU_ITEMS = [];
@@ -73,7 +73,7 @@
   /* ---------------- Page loader ---------------- */
   window.addEventListener('load', () => {
     const loader = document.getElementById('loader');
-    if (loader) setTimeout(() => loader.classList.add('is-hidden'), 300);
+    if (loader) setTimeout(() => loader.classList.add('is-hidden'), 360);
   });
 
   /* ---------------- Sticky navbar + scroll-to-top ---------------- */
